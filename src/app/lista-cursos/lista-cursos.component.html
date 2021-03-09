@@ -1,21 +1,7 @@
 <div class="min-vh-50 flex-column d-flex align-items-center">
     <h1>Cursos</h1>
+    <app-cadastar-curso (onClickCadastrarCurso)="addCurso($event)"></app-cadastar-curso>
     <div class="d-flex flex-wrap align-items-center justify-content-center pt-3" >
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
-        <app-curso></app-curso>
+        <app-curso [curso]="c" *ngFor="let c of cursos"></app-curso>
     </div>
 </div>

@@ -7,5 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaCursosComponent {
 
+  cursos = [
+    {
+      nome: "POOA",
+      carga_horaria:100
+    },
+    {
+      nome: "Redes",
+      carga_horaria:150
+    }
+  ]
 
+  addCurso(curso) {
+    this.cursos.push(curso);
+  }
 }
